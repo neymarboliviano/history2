@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História dos Clubes Brasileiros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>História dos Clubes Brasileiros</h1>
+            <p>Conheça a trajetória dos grandes times do futebol brasileiro</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" class="active" data-club="palmeiras">Palmeiras</a></li>
+                <li><a href="#" data-club="corinthians">Corinthians</a></li>
+                <li><a href="#" data-club="sao-paulo">São Paulo</a></li>
+                <li><a href="#" data-club="santos">Santos</a></li>
+                <li><a href="#" data-club="flamengo">Flamengo</a></li>
+                <li><a href="#" data-club="fluminense">Fluminense</a></li>
+                <li><a href="#" data-club="vasco">Vasco</a></li>
+                <li><a href="#" data-club="botafogo">Botafogo</a></li>
+                <li><a href="#" data-club="cruzeiro">Cruzeiro</a></li>
+                <li><a href="#" data-club="outros">Outros Clubes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="club-info">
+            <div class="club-header">
+                <img id="club-logo" src="https://logodownload.org/wp-content/uploads/2015/05/palmeiras-logo-0.png" alt="Logo do Clube" class="club-logo">
+                <div>
+                    <h2 id="club-name">Sociedade Esportiva Palmeiras</h2>
+                    <p id="club-nickname">O Verdão</p>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-button active" data-tab="historia">História</button>
+                <button class="tab-button" data-tab="titulos">Títulos</button>
+                <button class="tab-button" data-tab="idolos">Ídolos</button>
+                <button class="tab-button" data-tab="estadio">Estádio</button>
+                <button class="tab-button" data-tab="estatisticas">Estatísticas</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="historia" class="tab-pane active">
+                    <h3>História do Clube</h3>
+                    <p id="history-text">Fundado em 26 de agosto de 1914 por imigrantes italianos como Palestra Italia, o Palmeiras é um dos clubes mais tradicionais do Brasil. Mudou de nome em 1942 durante a Segunda Guerra Mundial. É conhecido como o "Campeão do Século" por ter sido eleito o melhor time do século XX no Brasil pela FIFA.</p>
+                </div>
+
+                <div id="titulos" class="tab-pane">
+                    <h3>Títulos Conquistados</h3>
+                    <ul id="titles-list"></ul>
+                </div>
+
+                <div id="idolos" class="tab-pane">
+                    <h3>Ídolos do Clube</h3>
+                    <div class="idols-grid" id="idols-grid"></div>
+                </div>
+
+                <div id="estadio" class="tab-pane">
+                    <h3>Estádio</h3>
+                    <div id="stadium-info"></div>
+                    <img id="stadium-image" src="" alt="Estádio do clube" class="stadium-img">
+                </div>
+
+                <div id="estatisticas" class="tab-pane">
+                    <h3>Estatísticas Históricas</h3>
+                    <div id="stats-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="other-clubs" style="display: none;">
+            <h2>Outros Clubes Brasileiros</h2>
+            <p>Em breve, mais clubes serão adicionados ao nosso acervo.</p>
+            <div class="suggest-club">
+                <h3>Sugira um clube</h3>
+                <form id="suggest-form">
+                    <input type="text" id="club-suggestion" placeholder="Nome do clube que gostaria de ver" required>
+                    <button type="submit">Enviar Sugestão</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 História dos Clubes Brasileiros</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
